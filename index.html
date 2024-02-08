@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay's Bake Land</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-----------------welcome/initial page------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html#cakes">Cakes</a></li>
+                        <li><a href="products.html#pastry">Pastry</a></li>
+                        <li><a href="products.html#savoury">Savoury</a></li>
+                        <li><a href="products.html#cookies">Cookies</a></li>
+                        <li><a href="order.html#about">About</a></li>
+                        <li><a href="order.html#contact">Contact</a></li>
+                        <!-- <li><a href="">Account</a></li> -->
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <!---------------Intro--------------------->
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Taste Buds <br>A Sweet & Savoury <br>Ride!</h1>
+                    <p>Taste's Like Heaven.</p>
+                    <a href="#categories" class="btn">Order Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/cake-down3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------categories------------------>
+    <div class="categories" id="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3"><a href="products.html#cakes"><img src="images/cake-down2.png" alt=""></a></div>
+                <div class="col-3"><a href="products.html#savoury"><img src="images/pizza1.jpg" alt=""></a></div>
+                <div class="col-3"><a href="products.html#cookies"><img src="images/Cookie2.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <!-----------------winter's finest flavours------------------>
+    <div class="small-container">
+        <h2 id="cakes" class="title">Winter's Finest Flavours</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/cake1.jpg" alt="">
+                <h4>Black Forest Cake</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₹200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/cake2.jpg" alt="">
+                <h4>Strawberry Cake</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₹200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/cake3.jpg" alt="">
+                <h4>Butterscotch Cake</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₹200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/cake4.jpg" alt="">
+                <h4>Fruits Cake</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₹200</p>
+            </div>
+        </div>
+    </div>
+    <!---------------- offer ---------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive-combo1.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Kay's Bake Land</p>
+                    <h1>Kay's Hamper</h1>
+                    <small>
+                        The Kay's Hamper comprises of a huge sweet
+                        pastry of your choice, a mini pasta plate or a hot slice of veg pizza and
+                        the Kay's Bake Land special choco-chip cookies, to take your taste buds to the sky.
+                    </small><br>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------testimonial------------- -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>I'm in love with all the cakes I've ever ordered. ❤️
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/userpic-2.png" alt="">
+                    <h3>Ayushi</h3>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h6 style="display: inline;">Delhi-NCR</h6>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Awesome cake and return gifts arranged. Overall great experience.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/testpic.png" alt="">
+                    <h3>Girish Kumar</h3>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h6 style="display: inline;">Delhi-NCR</h6>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Loved the taste at this place.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/userpic-1.png" alt="">
+                    <h3>Milan</h3>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h6 style="display: inline;">Delhi-NCR</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------brands/info------- -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fa fa-truck"></i>
+                    <h4><b>Home Delivery</b></h4>
+                    <p>Delhi and NCR</p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="fa fa-gift"></i>
+                    <h4><b>Payment 100% Secure</b></h4>
+                    <p>Cash, Card and UPI</p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="fa fa-heart"></i>
+                    <h4><b>Self Pickup</b></h4>
+                    <p>From Our Store</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------footer-------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/payment-modes.png" alt="">
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our aim is to sustainably make the pleasure</p>
+                </div>
+                <div class="footer-col-3">
+                    <!-- <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul> -->
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------js for toggle menu-------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>

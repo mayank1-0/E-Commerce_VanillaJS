@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay's Bake Land - All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-----------------welcome/initial page------------------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html#cakes">Cakes</a></li>
+                    <li><a href="products.html#pastry">Pastry</a></li>
+                    <li><a href="products.html#savoury">Savoury</a></li>
+                    <li><a href="products.html#cookies">Cookies</a></li>
+                    <li><a href="order.html#about">About</a></li>
+                    <li><a href="order.html#contact">Contact</a></li>
+                    <!-- <li><a href="">Account</a></li> -->
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!---------------- offer ---------------->
+    <div class="offer1">
+        <div class="small-container1">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/shop_orignal.jpg" class="offer-img1" id="about">
+                </div>
+                <div class="col-2">
+                    <h1>About Us</h1>
+                    <small>
+                        This is a small cake paradise offering various fast food items along with the different super
+                        delicious cakes.
+                        The fast food items here are properly cooked and are quite flavourful.
+                        The cakes can be customised and are of great quality as well as taste.
+                    </small><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------Intro--------------------->
+    <div class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="to-center">
+                        <h1 id="contact">Contact Us</h1>
+                        <br>
+                        <h3>Prodution Unit - Kay's Bake Land</h3>
+                        <small class="gap">
+                            14, Huda Market, Sector 37, Faridabad, Delhi NCR, Delhi
+                        </small>
+                        <br>
+                        <br>
+                        <h3>Telephone</h3>
+                        <small class="gap">
+                            097173 67995
+                        </small>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="images/home-delivery.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------footer-------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/payment-modes.png" alt="">
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our aim is to sustainably make the pleasure</p>
+                </div>
+                <div class="footer-col-3">
+                    <!-- <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul> -->
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------js for toggle menu-------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
