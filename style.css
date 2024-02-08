@@ -120,11 +120,6 @@ p {
     padding: 0 25px;
 }
 
-.small-container1 {
-    max-width: 1080px;
-    margin: auto;
-}
-
 .col-4 {
     flex-basis: 25%;
     padding: 10px;
@@ -191,21 +186,8 @@ h4 {
     padding: 30px 0;
 }
 
-.offer1 {
-    margin-top: 80px;
-    padding: 30px 0;
-}
-
 .col-2 .offer-img {
     padding: 50px;
-}
-
-.col-2 .offer-img1 {
-    padding-right: 50px;
-}
-
-.offer1 h1 {
-    text-align: center;
 }
 
 small {
@@ -424,6 +406,19 @@ th:last-child {
 
 .header1 .col-2 .to-center {
     text-align: center;
+}
+
+.offer1 {
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.offer1 h1 {
+    text-align: center;
+}
+
+.offer1 .image-width {
+    width: 95%;
 }
 
 /* ----------- media query for menu ------------ */
