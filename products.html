@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay's Bake Land - All Products</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/needed.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <!-----------------welcome/initial page------------------>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html#cakes">Cakes</a></li>
+                        <li><a href="products.html#pastry">Pastry</a></li>
+                        <li><a href="products.html#savoury">Savoury</a></li>
+                        <li><a href="products.html#cookies">Cookies</a></li>
+                        <li><a href="order.html#about">About</a></li>
+                        <li><a href="order.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn1" data-toggle="modal" data-target="#staticBackdrop">
+                    <i class="fas fa-shopping-bag"></i>
+                    <i class="total-count"></i>
+                </button>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        <!-----------------cakes------------------>
+        <div class="small-container">
+            <h2 id="cakes" class="title">Cakes</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/cake1.jpg" alt="">
+                    <h4>Black Forest Cake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Black Forest Cake" data-price="200"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/cake2.jpg" alt="">
+                    <h4>Strawberry Cake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Strawberry Cake" data-price="200"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/cake3.jpg" alt="">
+                    <h4>Butterscotch Cake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Butterscotch Cake" data-price="200"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/cake4.jpg" alt="">
+                    <h4>Fruits Cake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Fruits Cake" data-price="200"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+            </div>
+            <!-----------------pastry------------------>
+            <h2 id="pastry" class="title">Pastry</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/pastry1.jpg" alt="">
+                    <h4>Chocolate Pastry</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Chocolate Pastry" data-price="200"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pastry2.jpg" alt="">
+                    <h4>Red Velvet Pastry</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Red Velvet Pastry" data-price="200"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pastry3.jpg" alt="">
+                    <h4>Coffee Pastry</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Coffee Pastry" data-price="200"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pastry4.jpg" alt="">
+                    <h4>Mocha Pastry</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Mocha Pastry" data-price="200"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+            </div>
+            <!-----------------savoury------------------>
+            <h2 id="savoury" class="title">Savoury</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/pasta1.jpg" alt="">
+                    <h4>Mix Pasta</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹175</p>
+                    <button type="button" data-name="Mix Pasta" data-price="175" class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pasta2.jpg" alt="">
+                    <h4>Basil Pasta</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>₹175</p>
+                    <button type="button" data-name="Basil Pasta" data-price="175"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pasta3.jpg" alt="">
+                    <h4>Red Sauce Pasta</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹175</p>
+                    <button type="button" data-name="Red Sauce Pasta" data-price="175"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pasta4.jpg" alt="">
+                    <h4>White Sauce Pasta</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹175</p>
+                    <button type="button" data-name="White Sauce Pasta" data-price="175"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pizza11.jpg" alt="">
+                    <h4>Veg Pizza</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹150</p>
+                    <button type="button" data-name="Veg Pizza" data-price="150" class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/patty.jpg" alt="">
+                    <h4>Paneer Pattie</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹30</p>
+                    <button type="button" data-name="Paneer Pattie" data-price="30"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pizza22.jpg" alt="">
+                    <h4>Cheese Pizza</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹135</p>
+                    <button type="button" data-name="Cheese Pizza" data-price="135"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/garlic-bread.jpg" alt="">
+                    <h4>Garlic Bread</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹80</p>
+                    <button type="button" data-name="Garlic Bread" data-price="80"
+                        class="default-btn border-radius-5">Add
+                        to
+                        cart</button>
+                </div>
+            </div>
+            <!-----------------cookies------------------>
+            <h2 id="cookies" class="title">Cookies</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/cookies1.jpg" alt="">
+                    <h4>Choco-chip Cookies</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹180</p>
+                    <button type="button" data-name="Choco-chip Cookies" data-price="180"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/cookies2.jpg" alt="">
+                    <h4>Oat-meal Cookies</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>₹200</p>
+                    <button type="button" data-name="Oat-meal Cookies" data-price="200"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/biscotti.jpg" alt="">
+                    <h4>Almond Biscotti</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹250</p>
+                    <button type="button" data-name="Almond Biscotti" data-price="250"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/coconut-cookies.jpg" alt="">
+                    <h4>Coconut Cookies</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>₹135</p>
+                    <button type="button" data-name="Coconut Cookies" data-price="135"
+                        class="default-btn border-radius-5">Add to
+                        cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-------------footer-------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <img src="images/payment-modes.png" alt="">
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="">
+                        <p>Our aim is to sustainably make the pleasure</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <!-- <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul> -->
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+
+                        </table>
+                        <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!------------js for toggle menu-------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/shopping-cart.js"></script>
+</body>
+
+</html>
