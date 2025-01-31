@@ -104,7 +104,7 @@ var shoppingCart = (function () {
             for (p in item) {
                 itemCopy[p] = item[p];
             }
-            itemCopy.total = Number(item.price * item.count).toFixed(2);
+            itemCopy.total = Number(item.price * item.count).toFixed(0);
             cartCopy.push(itemCopy)
         }
         return cartCopy;
@@ -140,9 +140,9 @@ function displayCart() {
             + "<td><div class='input-group'>"
             + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
             + "</div></td>"
-            + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+            + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + " >X</button></td>"
             + " = "
-            + "<td>" + cartArray[i].total + "</td>"
+            + "<td> ₹" + cartArray[i].total + "</td>"
             + "</tr>";
     }
     $('.show-cart').html(output);
@@ -151,7 +151,6 @@ function displayCart() {
 }
 
 // Delete item button
-
 $('.show-cart').on("click", ".delete-item", function (event) {
     var name = $(this).data('name')
     shoppingCart.removeItemFromCartAll(name);
